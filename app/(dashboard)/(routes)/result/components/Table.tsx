@@ -30,7 +30,7 @@ export default function Table({
 			}}
 			pageSizeOptions={[10, 20, 25]}
 			onRowClick={({ row }) => {
-				router.push(`/result/${row.id}`);
+				router.push(`/result/${row.predictionId}`);
 			}}
 		/>
 	);

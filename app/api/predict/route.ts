@@ -34,12 +34,16 @@ export const POST = async (req: Request, res: Response) => {
 	}
 
 	const matchingDiseaseIds = matchingDiseases.map((disease) => disease.id);
+	const matchingDisease = matchingDiseases.map(
+		(disease) => disease.diseaseName
+	);
 
 	const history = await prismadb.predictions.create({
 		data: {
 			userId,
 			noticedSymptoms: [symptom1, symptom2],
-			diseases: matchingDiseaseIds,
+			diseases: matchingDisease,
+			diseaseIds: matchingDiseaseIds,
 		},
 	});
 

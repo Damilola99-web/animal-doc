@@ -10,9 +10,9 @@ export default async function page({
 		const disease = await getDisease(id);
 		return (
 			<div className=' flex flex-col p-4 space-y-2'>
-				<p>{disease?.diseaseName}</p>
-				<p>{disease?.information}</p>
-				<p>symptoms : </p>
+				<p className=' text-lg md:text-xl font-semibold'>{disease?.diseaseName}</p>
+				<p className='text-lg'>{disease?.information}</p>
+				<p className='font-bold'>Symptoms : </p>
 				<div className='flex flex-wrap gap-2'>
 					{disease?.symptoms.map((symptom) => (
 						<Button
@@ -23,7 +23,7 @@ export default async function page({
 						</Button>
 					))}
 				</div>
-				<p>treatment:</p>
+				<p className='font-bold'>Treatment:</p>
 				<div className='flex flex-wrap gap-2'>
 					{disease?.treatment.map((treatment) => (
 						<Button
@@ -34,7 +34,7 @@ export default async function page({
 						</Button>
 					))}
 				</div>
-				<p>prevention:</p>
+				<p className='font-bold'>Prevention:</p>
 				<div className='flex flex-wrap gap-2'>
 					{disease?.prevention.map((prevention) => (
 						<Button

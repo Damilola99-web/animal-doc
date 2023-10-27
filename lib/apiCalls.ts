@@ -36,3 +36,8 @@ export const getUserPredictions = async (userId: string) => {
 	});
 	return predictions;
 };
+
+export const getHistory = async (id: string) => {
+	const prediction = await prismadb.predictions.findUnique({ where: { id } });
+	return prediction;
+};

@@ -14,12 +14,12 @@ export default async function page({ searchParams }: IPage) {
 
 	return (
 		<div className=' p-4 flex flex-col space-y-3 '>
-			<p>Top Diseases from the database : Page {pageNo}</p>
+			<p className=' my-3 text-lg md:text-xl font-semibold'>Top Diseases from the database : Page {pageNo}</p>
 			{diseases.map((disease) => (
 				<Link href={`/disease/${disease.id}`}>
 					<div className=' w-full p-4 shadow-lg border-2 rounded-md'>
-						<p>{disease.diseaseName}</p>
-						<p>{disease.information}</p>
+						<p><span className='font-semibold'>Name:</span> {disease.diseaseName}</p>
+						<p><span className='font-semibold'>Information:</span> {disease.information}</p>
 						<div className=' flex flex-wrap gap-2 my-2'>
 							{' '}
 							{disease?.symptoms.map((symptom) => (

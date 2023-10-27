@@ -8,6 +8,7 @@ export default async function page() {
 	const predictionHistory = await getUserPredictions(userId!);
 	const tableData = predictionHistory.map((prediction, i) => ({
 		id: i + 1,
+		predictionId : prediction.id,
 		symptom1: prediction.noticedSymptoms[0],
 		symptom2: prediction.noticedSymptoms[1],
 		date: prediction.createdAt,
@@ -35,7 +36,8 @@ export default async function page() {
 
 	return (
 		<div className=' flex flex-col p-4 lg:p-6'>
-			<p>Prediction History</p>
+			<p className=' text-lg md:text-xl my-3 font-semibold'>Prediction History</p>
+			<p className=' my-3'>Check your prediction history over the time. You can see more details by clicking on the particular prediction you want to check.</p>
 			<Table
 				columns={columns}
 				tableData={tableData}
