@@ -1,0 +1,82 @@
+Arguments: 
+  /usr/bin/node /snap/node/7581/bin/yarn.js config get registry
+
+PATH: 
+  /home/abdul-rasheed/Desktop/Daniel_animal_disease/node_modules/.bin:/home/abdul-rasheed/Desktop/node_modules/.bin:/home/abdul-rasheed/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/abdul-rasheed/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/abdul-rasheed/Android/Sdk/tools:/home/abdul-rasheed/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ../../package.json: EACCES: permission denied, write
+      at writeSync (node:fs:924:3)
+      at SyncWriteStream._write (node:internal/fs/sync_write_stream:26:3)
+      at writeOrBuffer (node:internal/streams/writable:391:12)
+      at _write (node:internal/streams/writable:332:10)
+      at SyncWriteStream.Writable.write (node:internal/streams/writable:336:10)
+      at Object.clearLine (node:internal/readline/callbacks:107:17)
+      at clearLine (/snap/node/7581/lib/cli.js:49463:12)
+      at ConsoleReporter.warn (/snap/node/7581/lib/cli.js:92854:43)
+      at warn (/snap/node/7581/lib/cli.js:51326:23)
+      at module.exports.exports.default (/snap/node/7581/lib/cli.js:37409:7)
+
+npm manifest: 
+  {
+    "name": "saas_app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@clerk/nextjs": "^4.24.1",
+      "@hookform/resolvers": "^3.3.1",
+      "@prisma/client": "^5.4.1",
+      "@radix-ui/react-avatar": "^1.0.4",
+      "@radix-ui/react-dialog":  "1.0.4",
+      "@radix-ui/react-label": "^2.0.2",
+      "@radix-ui/react-select": "^2.0.0",
+      "@radix-ui/react-slot": "^1.0.2",
+      "@types/node": "20.6.2",
+      "@types/react": "18.2.21",
+      "@types/react-dom": "18.2.7",
+      "autoprefixer": "10.4.15",
+      "axios": "^1.5.1",
+      "class-variance-authority": "^0.7.0",
+      "clsx": "^2.0.0",
+      "eslint": "8.49.0",
+      "eslint-config-next": "13.4.19",
+      "lucide-react": "^0.279.0",
+      "next": "13.4.19",
+      "openai": "^4.10.0",
+      "postcss": "8.4.29",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-hook-form": "^7.46.2",
+      "react-markdown": "^9.0.0",
+      "tailwind-merge": "^1.14.0",
+      "tailwindcss": "3.3.3",
+      "tailwindcss-animate": "^1.0.7",
+      "typescript": "5.2.2",
+      "zod": "^3.22.2",
+      "zustand": "^4.4.3"
+    },
+    "devDependencies": {
+      "prisma": "^5.4.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
