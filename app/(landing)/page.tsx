@@ -24,9 +24,7 @@ export default function Landing() {
 							Want to find out about Animal Diseases?
 						</p>
 						<p className=' lg:text-xl md:text-base  text-[#eaf4f7]'>
-							Lorem ipsum dolor sit amet consectetur, adipisicing
-							elit. Illum repellendus natus architecto laudantium
-							.
+						Read on 100+ animal diseases available on our website; their symptoms, prevention and treatment.
 						</p>
 						<Link href={isSignedIn ? '/dashboard' : '/sign-in'}>
 							<Button
@@ -140,8 +138,8 @@ const SectionFour = () => {
 				Get Correct Prediction
 			</p>
 			<p className=' max-w-[550px] md:text-lg lg:text-xl text-base  text-[#a0b3c5]'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Nostrum, fugiat hic ratione, optio repellat, repellendus.
+				Easily predict animal disease with our AI powered platform by
+				stating the symptoms.
 			</p>
 			<Link href={isSignedIn ? '/dashboard' : '/sign-in'}>
 				<Button
