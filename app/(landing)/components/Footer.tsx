@@ -12,7 +12,7 @@ export const Footer = () => {
 						alt='logo'
 					/>
 					<p className='md:text-lg font-semibold text-[#396379]'>
-						Disease AI
+						Disease Prediction
 					</p>
 				</div>
 				<p className='text-sm md:text-base text-[#a0b3c5]'>

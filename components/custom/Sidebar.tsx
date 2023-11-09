@@ -55,7 +55,7 @@ const Sidebar = () => {
 							montserrat.className
 						)}
 					>
-						Disease AI
+						Disease Predictor
 					</h1>
 				</Link>
 				<div className='space-y-1'>

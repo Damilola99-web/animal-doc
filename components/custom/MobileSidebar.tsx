@@ -94,7 +94,7 @@ const MobileSidebar = () => {
 									montserrat.className
 								)}
 							>
-								Disease AI
+								Disease Prediction
 							</h1>
 						</Link>
 						<div className='space-y-1'>

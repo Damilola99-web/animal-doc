@@ -52,7 +52,7 @@ const SectionTwo = () => {
 			title: 'Predict Disease',
 			icon: Activity,
 			details:
-				'Easily predict animal disease with our AI powered platform by stating the symptoms.',
+				'Easily predict animal disease with our data powered platform by stating the symptoms.',
 		},
 		{
 			title: 'View Prediction History',
@@ -93,7 +93,7 @@ const SectionThree = () => {
 			heading: 'Predict Disease',
 			no: 1,
 			details:
-				'Easily predict animal disease with our AI powered platform by stating the symptoms.',
+				'Easily predict animal disease with our data powered platform by stating the symptoms.',
 		},
 		{
 			heading: 'View Prediction History',
@@ -138,7 +138,7 @@ const SectionFour = () => {
 				Get Correct Prediction
 			</p>
 			<p className=' max-w-[550px] md:text-lg lg:text-xl text-base  text-[#a0b3c5]'>
-				Easily predict animal disease with our AI powered platform by
+				Easily predict animal disease with our data powered platform by
 				stating the symptoms.
 			</p>
 			<Link href={isSignedIn ? '/dashboard' : '/sign-in'}>
