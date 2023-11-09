@@ -9,7 +9,7 @@ export const Navbar = () => {
 	return (
 		<div className=' flex p-4 md:px-8 justify-between items-center w-full bg-transparent shadow-md h-[100px]'>
 			<div className=' flex space-x-3 items-center'>
-				<p className='text-lg font-bold'>Disease AI</p>
+				<p className='text-lg font-bold'>Disease Prediction</p>
 				<Image
 					src='/logo.png'
 					alt='logo'
